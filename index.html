@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voyago Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+  <header class="navbar">
+    <div class="logo" onclick="scrollTopPage()">Voyago</div>
+
+    <nav>
+      <a href="#" class="active">Homepage</a>
+      <a href="#">Vacation</a>
+      <a href="#">Hotels</a>
+      <a href="#">All in One</a>
+      <a href="#">Car Rental</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="location-btn">📍 Kyoto, Japan</button>
+      <button class="register-btn" onclick="alert('Registered Successfully')">Register</button>
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <div class="text-area">
+      <h1>Start Your Journey to Your Dream Destination Here.</h1>
+      <p>
+        Discover stunning locations, plan with ease and create memories that last forever.
+        Your perfect getaway starts right here.
+      </p>
+
+      <div class="filters">
+        <button class="filter active" onclick="setFilter(this)">Hotels</button>
+        <button class="filter" onclick="setFilter(this)">Car Rent</button>
+        <button class="filter" onclick="setFilter(this)">Events</button>
+      </div>
+    </div>
+
+    <div class="hotel-area">
+
+      <div class="section-head">
+        <span>Best hotels in <b>Kyoto, Japan</b></span>
+      </div>
+
+      <div class="hotel-slider">
+        <button class="slide-btn" onclick="slideLeft()">❮</button>
+
+        <div class="cards" id="cardContainer">
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+            <div class="rating">★ 4.7</div>
+            <button class="fav" onclick="likeHotel(this)">♡</button>
+            <h3>Sakura Haven Kyoto</h3>
+            <p>$180 / night</p>
+          </div>
+
+          <div class="card">
+            <img src=https://media.istockphoto.com/id/1448186618/photo/moscow-cityscape-in-the-autumn-night.jpg?s=2048x2048&w=is&k=20&c=8zzsLNqN_V1ekDTetIAtI8jKZpWMaAHvoxp3tHLIVfU=>
+            <div class="rating">★ 4.9</div>
+            <button class="fav" onclick="likeHotel(this)">♡</button>
+            <h3>Riverlight Ryokan</h3>
+            <p>$66 / night</p>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455">
+            <div class="rating">★ 4.8</div>
+            <button class="fav" onclick="likeHotel(this)">♡</button>
+            <h3>Hilltop Onsen</h3>
+            <p>$205 / night</p>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+            <div class="rating">★ 4.6</div>
+            <button class="fav" onclick="likeHotel(this)">♡</button>
+            <h3>Lantern House</h3>
+            <p>$120 / night</p>
+          </div>
+
+        </div>
+
+        <button class="slide-btn" onclick="slideRight()">❯</button>
+      </div>
+
+      <div class="partners">
+        <span>Booking</span>
+        <span>Airbnb</span>
+        <span>Expedia</span>
+        <span>TripAdvisor</span>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
